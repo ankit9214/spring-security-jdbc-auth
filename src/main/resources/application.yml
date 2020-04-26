@@ -1,0 +1,6 @@
+spring:
+    datasource:
+      #Here Security is your table name
+      url: "jdbc:mysql://localhost/security"
+      username: #username to connect to your DB
+      password: #password to connect to your DB
