@@ -2,5 +2,12 @@ spring:
     datasource:
       #Here Security is your table name
       url: "jdbc:mysql://localhost/security"
-      username: #username to connect to your DB
-      password: #password to connect to your DB
+      username: #your db user name here
+      password: #user db password here
+    jpa:
+      hibernate:
+        ddl-auto: "create"
+        naming-strategy: "org.hibernate.cfg.ImprovedNamingStrategy"
+      properties:
+        hibernate:
+        dialect: "org.hibernate.dialect.MYSQL5Dialect"
